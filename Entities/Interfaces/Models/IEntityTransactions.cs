@@ -18,5 +18,9 @@ namespace Entities.Interfaces.Models
     DateTime Date { get; set; }
 
     bool isStationary { get; set; }
+
+     int ItemId { get; set; }
+
+     int TransactionType { get; set; }
   }
 }
