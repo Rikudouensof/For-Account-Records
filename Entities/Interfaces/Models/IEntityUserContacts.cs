@@ -29,5 +29,9 @@ namespace Entities.Interfaces.Models
     string Description { get; set; }
 
     string Address { get; set; }
+
+     string Website { get; set; }
+
+     string DisplayName { get; set; }
   }
 }

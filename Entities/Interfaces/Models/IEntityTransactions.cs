@@ -21,6 +21,6 @@ namespace Entities.Interfaces.Models
 
      int ItemId { get; set; }
 
-     int TransactionType { get; set; }
+     int TransactionTypeId { get; set; }
   }
 }

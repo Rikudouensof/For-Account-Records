@@ -11,6 +11,6 @@ namespace Entities.Interfaces.Models
 
     string Name { get; set; }
 
-
+    string UploaderId { get; set; }
   }
 }
