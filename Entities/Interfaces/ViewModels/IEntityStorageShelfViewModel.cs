@@ -12,4 +12,12 @@ namespace Entities.Interfaces.ViewModels
 
      IEnumerable<IEntityStorageSpace> StorageSpaces { get; set; }
   }
+
+  public interface IEntityStorageShelfGroupViewModel
+  {
+
+    IEnumerable<IEntityStorageShelfs> Shelf { get; set; }
+
+    IEnumerable<IEntityStorageSpace> StorageSpaces { get; set; }
+  }
 }

@@ -11,4 +11,12 @@ namespace Entities.Interfaces.ViewModels
      IEntityItems Item { get; set; }
      IEnumerable<IEntityItemType> ItemTypes { get; set; }
   }
+
+
+  public interface IEntityItemGroupViewModel
+  {
+
+    IEnumerable<IEntityItems> Items { get; set; }
+    IEnumerable<IEntityItemType> ItemTypes { get; set; }
+  }
 }

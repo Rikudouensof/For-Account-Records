@@ -11,3 +11,4 @@ namespace Entities.Interfaces.Models
     string Name { get; set; }
   }
 }
+ 
