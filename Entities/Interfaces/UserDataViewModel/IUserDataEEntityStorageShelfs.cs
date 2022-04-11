@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Entities.Interfaces.Models
+namespace Entities.Interfaces.UserDataViewModel
 {
-  public interface IUserDataEEntityItems : IEntityCoreEntity
+  public interface IUserDataEEntityStorageShelfs 
   {
 
     int Id { get; set; }
@@ -13,13 +13,6 @@ namespace Entities.Interfaces.Models
 
     string Description { get; set; }
 
-
-
-
-    string ItemImage { get; set; }
-
-    int ItemTypeId { get; set; }
-
-
+    int StrorageSpaceId { get; set; }
   }
 }

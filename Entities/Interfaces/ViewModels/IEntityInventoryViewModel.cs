@@ -8,15 +8,15 @@ namespace Entities.Interfaces.ViewModels
   public interface IEntityInventoryViewModel
   {
 
-    IEntityInventory Inventory { get; set; }
+    IUserDataEEntityInventory Inventory { get; set; }
 
-    IEnumerable<IEntityItems> AllItems { get; set; }
+    IEnumerable<IUserDataEEntityItems> AllItems { get; set; }
   }
 
   public interface IEntityInventoryGroupViewModel
   {
-    IEnumerable<IEntityInventory> Inventory { get; set; }
+    IEnumerable<IUserDataEEntityInventory> Inventory { get; set; }
 
-    IEnumerable<IEntityItems> AllItems { get; set; }
+    IEnumerable<IUserDataEEntityItems> AllItems { get; set; }
   }
 }

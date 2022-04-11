@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ForAccountRecordsInfrastructure.Models
 {
 
-  public class DataTransaction : IEntityTransactions
+  public class DataTransaction : IUserDataEEntityTransactions
   {
     public int Id { get; set; }
     public string Name { get; set; }

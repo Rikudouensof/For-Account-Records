@@ -13,8 +13,8 @@ namespace ForAccountRecordsInfrastructure.Interfaces.Repository
   {
     public IEntityItemViewModel GetSingleSpecificItem(int id);
 
-    public IEntityItemViewModel AddNewItem(IEntityItems item);
-    public IEntityItemViewModel EditItem(IEntityItems item);
+    public IEntityItemViewModel AddNewItem(IUserDataEEntityItems item);
+    public IEntityItemViewModel EditItem(IUserDataEEntityItems item);
 
     public IEntityItemGroupViewModel GetAllItems();
 

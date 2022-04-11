@@ -10,16 +10,16 @@ namespace ForAccountRecordsInfrastructure.Interfaces.Repository
 {
   public interface IContactsRepository
   {
-    public IEntityUserContacts GetSingleSpecificContact(int id);
+    public IUserDataEntityUserContacts GetSingleSpecificContact(int id);
 
-    public IEnumerable<IEntityUserContacts> GetAllContact();
+    public IEnumerable<IUserDataEntityUserContacts> GetAllContact();
 
-    public IEntityUserContacts AddNewContact(IEntityUserContacts contact);
+    public IUserDataEntityUserContacts AddNewContact(IUserDataEntityUserContacts contact);
 
 
-    public IEntityUserContacts EditUserContacts(IEntityUserContacts contact);
+    public IUserDataEntityUserContacts EditUserContacts(IUserDataEntityUserContacts contact);
 
-    public IEntityUserContacts DeleteUserContacts(int id);
+    public IUserDataEntityUserContacts DeleteUserContacts(int id);
 
 
   }

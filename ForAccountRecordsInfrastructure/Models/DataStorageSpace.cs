@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ForAccountRecordsInfrastructure.Models
 {
 
-  public class DataStorageSpace : IEntityStorageSpace
+  public class DataStorageSpace : IUserDataEEntityStorageSpace
   {
     public int Id { get; set; }
     public string Name { get; set; }

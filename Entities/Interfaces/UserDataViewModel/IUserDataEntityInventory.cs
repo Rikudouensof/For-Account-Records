@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Entities.Interfaces.Models
+namespace Entities.Interfaces.UserDataViewModel
 {
-  public interface IUserDataEEntityInventory : IEntityCoreEntity
+  public interface IUserDataEntityInventory
   {
+
     int Id { get; set; }
     decimal PurchacePrice { get; set; }
 

@@ -13,9 +13,9 @@ namespace ForAccountRecordsInfrastructure.Interfaces.Repository
   {
     public IEntityInventoryViewModel GetSingleSpecificInventory(int id);
 
-    public IEntityInventoryViewModel AddNewInventory(IEntityInventory inventory);
+    public IEntityInventoryViewModel AddNewInventory(IUserDataEEntityInventory inventory);
 
-    public IEntityInventoryViewModel EditInventory(IEntityInventory inventory);
+    public IEntityInventoryViewModel EditInventory(IUserDataEEntityInventory inventory);
 
     public IEntityInventoryGroupViewModel GetAllInventories();
 

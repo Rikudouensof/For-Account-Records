@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32317.152
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForAccountRecordsAPI", "ForAccountRecordsAPI\ForAccountRecordsAPI.csproj", "{248DD010-614A-45CC-BAFD-3A3C98C33286}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForAccountRecordsAPI", "ForAccountRecordsAPI\ForAccountRecordsAPI.csproj", "{248DD010-614A-45CC-BAFD-3A3C98C33286}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{7D0FDAFE-6851-42F9-B1E2-D0563890326C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{7D0FDAFE-6851-42F9-B1E2-D0563890326C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mobile", "Mobile", "{3BC83669-A035-4367-A082-87FA845EF754}"
 EndProject
@@ -13,9 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForAccountRecordsMobile.And
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForAccountRecordsMobile.iOS", "ForAccountRecordsMobile\ForAccountRecordsMobile.iOS\ForAccountRecordsMobile.iOS.csproj", "{21247F3E-9EDA-4B37-BC43-ACD636A170B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForAccountRecordsMobile", "ForAccountRecordsMobile\ForAccountRecordsMobile\ForAccountRecordsMobile.csproj", "{CC3AA583-DE89-4C9A-B3DB-73C44250ADAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForAccountRecordsMobile", "ForAccountRecordsMobile\ForAccountRecordsMobile\ForAccountRecordsMobile.csproj", "{CC3AA583-DE89-4C9A-B3DB-73C44250ADAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForAccountRecordsInfrastructure", "ForAccountRecordsInfrastructure\ForAccountRecordsInfrastructure.csproj", "{2AD5D4D3-A16C-4941-8B0D-83AC1ABB4790}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForAccountRecordsInfrastructure", "ForAccountRecordsInfrastructure\ForAccountRecordsInfrastructure.csproj", "{2AD5D4D3-A16C-4941-8B0D-83AC1ABB4790}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{3B61EF70-A4DD-4DDA-800C-0FD38328EB5E}"
 EndProject

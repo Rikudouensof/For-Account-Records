@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ForAccountRecordsInfrastructure.Models
 {
 
-  public class DataContacts : IEntityUserContacts
+  public class DataContacts : IUserDataEntityUserContacts
   {
     public int Id { get; set; }
     public string LastName { get; set; }

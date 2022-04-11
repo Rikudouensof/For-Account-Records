@@ -8,16 +8,16 @@ namespace Entities.Interfaces.ViewModels
   public  interface IEntityStorageShelfViewModel
   {
 
-     IEntityStorageShelfs Shelf { get; set; }
+     IUserDataEEntityStorageShelfs Shelf { get; set; }
 
-     IEnumerable<IEntityStorageSpace> StorageSpaces { get; set; }
+     IEnumerable<IUserDataEEntityStorageSpace> StorageSpaces { get; set; }
   }
 
   public interface IEntityStorageShelfGroupViewModel
   {
 
-    IEnumerable<IEntityStorageShelfs> Shelf { get; set; }
+    IEnumerable<IUserDataEEntityStorageShelfs> Shelf { get; set; }
 
-    IEnumerable<IEntityStorageSpace> StorageSpaces { get; set; }
+    IEnumerable<IUserDataEEntityStorageSpace> StorageSpaces { get; set; }
   }
 }

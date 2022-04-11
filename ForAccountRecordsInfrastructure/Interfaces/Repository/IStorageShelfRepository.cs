@@ -13,8 +13,8 @@ namespace ForAccountRecordsInfrastructure.Interfaces.Repository
   {
     public IEntityStorageShelfViewModel GetSingleStorageShelf(int Id);
 
-    public IEntityStorageShelfViewModel AddSingleStorageShelf(IEntityStorageShelfs storageShelfs);
-    public IEntityStorageShelfViewModel EditStorageShelf(IEntityStorageShelfs storageShelfs);
+    public IEntityStorageShelfViewModel AddSingleStorageShelf(IUserDataEEntityStorageShelfs storageShelfs);
+    public IEntityStorageShelfViewModel EditStorageShelf(IUserDataEEntityStorageShelfs storageShelfs);
 
 
     public IEntityStorageShelfGroupViewModel GetAllStoraheShelf();

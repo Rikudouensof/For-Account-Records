@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Entities.Interfaces.Models
+namespace Entities.Interfaces.UserDataViewModel
 {
-  public interface IUserDataEEntityItems : IEntityCoreEntity
+  public interface IUserDataEEntityItems 
   {
 
     int Id { get; set; }

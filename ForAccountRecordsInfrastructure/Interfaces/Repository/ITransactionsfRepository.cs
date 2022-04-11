@@ -12,8 +12,8 @@ namespace ForAccountRecordsInfrastructure.Interfaces.Repository
   {
     public IEntityTransactionViewModel GetSingleTransaction(int Id);
 
-    public IEntityTransactionViewModel AddSingleTransaction(IEntityTransactions storageShelfs);
-    public IEntityTransactionViewModel EditTransaction(IEntityTransactions storageShelfs);
+    public IEntityTransactionViewModel AddSingleTransaction(IUserDataEEntityTransactions storageShelfs);
+    public IEntityTransactionViewModel EditTransaction(IUserDataEEntityTransactions storageShelfs);
 
 
     public IEntityTransactionGroupViewModel GetAllTransactions();
