@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ForAccountRecordsInfrastructure.Models
+namespace ForAccountRecordsCore.Models
 {
   internal class DataInventory : IUserDataEEntityInventory
   {

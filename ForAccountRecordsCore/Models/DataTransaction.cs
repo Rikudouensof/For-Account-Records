@@ -5,25 +5,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ForAccountRecordsInfrastructure.Models
+namespace ForAccountRecordsCore.Models
 {
 
-  public class DataStorageShelf : IUserDataEEntityStorageShelfs
+  public class DataTransaction : IUserDataEEntityTransactions
   {
     public int Id { get; set; }
     public string Name { get; set; }
+    public string Ammount { get; set; }
     public string Description { get; set; }
+    public DateTime Date { get; set; }
+    public bool isStationary { get; set; }
+
 
     public DateTime DateUploaded { get; set; }
     public bool isDeleted { get; set; }
 
-    //Relationships
+    //Relationship
 
-    public DataStorageSpace StrorageSpace { get; set; }
-    public int StrorageSpaceId { get; set; }
+
+
+    public DataItem Item { get; set; }
+    public int ItemId { get; set; }
+
+
+
+    public DataTransactionType TransactionType { get; set; }
+
+    public int TransactionTypeId { get; set; }
+
 
     public DataUser Uploader { get; set; }
     public string UploaderId { get; set; }
   }
-
 }

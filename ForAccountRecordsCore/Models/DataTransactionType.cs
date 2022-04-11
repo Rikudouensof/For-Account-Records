@@ -5,13 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ForAccountRecordsInfrastructure.Models
+namespace ForAccountRecordsCore.Models
 {
 
-  public class DataStorageSpace : IUserDataEEntityStorageSpace
+  public class DataTransactionType : IUserDataEntityTransactionType
   {
     public int Id { get; set; }
     public string Name { get; set; }
+
     public DateTime DateUploaded { get; set; }
     public bool isDeleted { get; set; }
 
@@ -19,5 +20,6 @@ namespace ForAccountRecordsInfrastructure.Models
 
     public DataUser Uploader { get; set; }
     public string UploaderId { get; set; }
+    
   }
 }
