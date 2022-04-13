@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ForAccountRecordsInfrastructure.Interfaces.Repository
+namespace ForAccountRecordsInfrastructure.Interfaces.Services
 {
-  public interface ITransactionTypeRepository
+  public interface ITransactionTypeService
   {
     public IUserDataEntityTransactionType GetSingleSpecificTransactionType(int id);
 
@@ -15,6 +15,7 @@ namespace ForAccountRecordsInfrastructure.Interfaces.Repository
     public IEnumerable<IUserDataEntityTransactionType> GetAllTransactionTypes();
 
 
+    public IEnumerable<IUserDataEntityTransactionType> GetSearchedTransactionTypes(string searchTerm);
 
 
     public IUserDataEntityTransactionType AddSingleTransactionType(IUserDataEntityTransactionType transactionType);

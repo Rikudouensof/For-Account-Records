@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ForAccountRecordsInfrastructure.Interfaces.Repository
+namespace ForAccountRecordsInfrastructure.Interfaces.Services
 {
-  public interface IStorageSpaceRepository
+  public interface IStorageSpaceService
   {
     public IUserDataEEntityStorageSpace GetSingleSpecificStorageSpace(int id);
 
@@ -15,6 +15,7 @@ namespace ForAccountRecordsInfrastructure.Interfaces.Repository
     public IEnumerable<IUserDataEEntityStorageSpace> GetAllStorageSpace();
 
 
+    public IEnumerable<IUserDataEEntityStorageSpace> GetSearchedStorageSpace(string searchTerm);
 
 
     public IUserDataEEntityStorageSpace AddSingleStorageSpace(IUserDataEEntityStorageSpace storageSpace);

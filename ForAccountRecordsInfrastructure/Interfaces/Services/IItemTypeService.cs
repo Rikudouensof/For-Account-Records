@@ -5,16 +5,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ForAccountRecordsInfrastructure.Interfaces.Repository
+namespace ForAccountRecordsInfrastructure.Interfaces.Services
 {
 
-  public interface IItemTypeRepository
+  public interface IItemTypeService
   {
     public IUserDataEEntityItemType GetSingleSpecificItemType(int id);
 
 
     public IEnumerable<IUserDataEEntityItemType> GetAllItemType();
 
+    public IEnumerable<IUserDataEEntityItemType> GetSearchedItemType(string searchTerm);
 
 
 

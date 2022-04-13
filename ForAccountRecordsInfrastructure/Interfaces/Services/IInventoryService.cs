@@ -6,10 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ForAccountRecordsInfrastructure.Interfaces.Repository
+namespace ForAccountRecordsInfrastructure.Interfaces.Services
 {
 
-  public interface IInventoryRepository
+  public interface IInventoryService
   {
     public IEntityInventoryViewModel GetSingleSpecificInventory(int id);
 
@@ -19,5 +19,6 @@ namespace ForAccountRecordsInfrastructure.Interfaces.Repository
 
     public IEntityInventoryGroupViewModel GetAllInventories();
 
+    public IEntityInventoryGroupViewModel GetSpecificGroupInventories(string searchTerm, int? itemId);
   }
 }

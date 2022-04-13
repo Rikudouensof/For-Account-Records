@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ForAccountRecordsInfrastructure.Interfaces.Repository
+namespace ForAccountRecordsInfrastructure.Interfaces.Services
 {
-  public interface ITransactionsfRepository
+  public interface ITransactionsfService
   {
     public IEntityTransactionViewModel GetSingleTransaction(int Id);
 
@@ -18,6 +18,7 @@ namespace ForAccountRecordsInfrastructure.Interfaces.Repository
 
     public IEntityTransactionGroupViewModel GetAllTransactions();
 
+    public IEntityTransactionGroupViewModel GetSpecificGroupTransactions(string searchTerm, int? storageSpaceId);
 
   }
 }

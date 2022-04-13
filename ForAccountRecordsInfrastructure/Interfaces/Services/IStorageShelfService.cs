@@ -6,10 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ForAccountRecordsInfrastructure.Interfaces.Repository
+namespace ForAccountRecordsInfrastructure.Interfaces.Services
 {
 
-  public interface IStorageShelfRepository
+  public interface IStorageShelfService
   {
     public IEntityStorageShelfViewModel GetSingleStorageShelf(int Id);
 
@@ -19,6 +19,7 @@ namespace ForAccountRecordsInfrastructure.Interfaces.Repository
 
     public IEntityStorageShelfGroupViewModel GetAllStoraheShelf();
 
+    public IEntityStorageShelfGroupViewModel GetSpecificGroupStorageShelf(string searchTerm, int? storageSpaceId);
 
 
 

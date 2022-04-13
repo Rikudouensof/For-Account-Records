@@ -6,10 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ForAccountRecordsInfrastructure.Interfaces.Repository
+namespace ForAccountRecordsInfrastructure.Interfaces.Services
 {
 
-  public interface IItemReposiory
+  public interface IItemService
   {
     public IEntityItemViewModel GetSingleSpecificItem(int id);
 
@@ -18,6 +18,7 @@ namespace ForAccountRecordsInfrastructure.Interfaces.Repository
 
     public IEntityItemGroupViewModel GetAllItems();
 
+    public IEntityItemGroupViewModel GetSpecificItemGroup(string searchTerm, int? itemTypeId);
 
   }
 
