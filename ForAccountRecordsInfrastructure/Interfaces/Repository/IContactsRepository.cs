@@ -10,6 +10,8 @@ namespace ForAccountRecordsInfrastructure.Interfaces.Repository
 {
   public interface IContactsRepository
   {
+
+   
     public IUserDataEntityUserContacts GetSingleSpecificContact(int id);
 
     public IEnumerable<IUserDataEntityUserContacts> GetAllContact();
