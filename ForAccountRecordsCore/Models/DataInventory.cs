@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ForAccountRecordsCore.Models
 {
-  public class DataInventory : IUserDataEEntityInventory
+  public class DataInventory : IEntityInventory
   {
     public int Id { get; set; }
     public decimal PurchacePrice { get; set; }

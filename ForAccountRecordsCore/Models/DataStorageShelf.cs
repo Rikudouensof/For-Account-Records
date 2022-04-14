@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ForAccountRecordsCore.Models
 {
 
-  public class DataStorageShelf : IUserDataEEntityStorageShelfs
+  public class DataStorageShelf : IEntityStorageShelfs
   {
     public int Id { get; set; }
     public string Name { get; set; }

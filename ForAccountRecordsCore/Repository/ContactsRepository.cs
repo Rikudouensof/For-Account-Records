@@ -17,14 +17,14 @@ namespace ForAccountRecordsCore.Repository
     {
       _db = db;
     }
-    public IUserDataEntityUserContacts AddNewContact(IUserDataEntityUserContacts contact)
+    public IEntityUserContacts AddNewContact(IEntityUserContacts contact)
     {
       _db.Contacts.Add((DataContacts)contact);
       _db.SaveChanges();
       return contact;
     }
 
-    public IUserDataEntityUserContacts DeleteUserContacts(int id)
+    public IEntityUserContacts DeleteUserContacts(int id)
     {
       
       var contact = _db.Contacts.Find(id);
@@ -33,21 +33,21 @@ namespace ForAccountRecordsCore.Repository
       return contact;
     }
 
-    public IUserDataEntityUserContacts EditUserContacts(IUserDataEntityUserContacts contact)
+    public IEntityUserContacts EditUserContacts(IEntityUserContacts contact)
     {
       _db.Contacts.Update((DataContacts)contact);
       _db.SaveChanges();
       return contact;
     }
 
-    public IEnumerable<IUserDataEntityUserContacts> GetAllContact()
+    public IEnumerable<IEntityUserContacts> GetAllContact()
     {
       var allUserContacts = _db.Contacts.OrderBy(m => m.LastName);
       return allUserContacts;
     }
 
     //Find One
-    public IUserDataEntityUserContacts GetSingleSpecificContact(int id)
+    public IEntityUserContacts GetSingleSpecificContact(int id)
     {
       var contact = _db.Contacts.Find(id);
       return contact;
