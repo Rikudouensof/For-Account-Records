@@ -9,17 +9,17 @@ namespace ForAccountRecordsInfrastructure.Interfaces.Repository
 {
   public interface IStorageSpaceRepository
   {
-    public IUserDataEEntityStorageSpace GetSingleSpecificStorageSpace(int id);
+    public IEntityStorageSpace GetSingleSpecificStorageSpace(int id);
 
 
-    public IEnumerable<IUserDataEEntityStorageSpace> GetAllStorageSpace();
+    public IEnumerable<IEntityStorageSpace> GetAllStorageSpace();
 
 
 
 
-    public IUserDataEEntityStorageSpace AddSingleStorageSpace(IUserDataEEntityStorageSpace storageSpace);
+    public IEntityStorageSpace AddSingleStorageSpace(IEntityStorageSpace storageSpace);
 
 
-    public IUserDataEEntityStorageSpace EditStorageSpace(IUserDataEEntityStorageSpace storageSpace);
+    public IEntityStorageSpace EditStorageSpace(IEntityStorageSpace storageSpace);
   }
 }

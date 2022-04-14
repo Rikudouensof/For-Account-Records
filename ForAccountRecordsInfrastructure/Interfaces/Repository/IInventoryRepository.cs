@@ -11,13 +11,13 @@ namespace ForAccountRecordsInfrastructure.Interfaces.Repository
 
   public interface IInventoryRepository
   {
-    public IEntityInventoryViewModel GetSingleSpecificInventory(int id);
+    public IEntityInventory GetSingleSpecificInventory(int id);
 
-    public IEntityInventoryViewModel AddNewInventory(IUserDataEEntityInventory inventory);
+    public IEntityInventory AddNewInventory(IEntityInventory inventory);
 
-    public IEntityInventoryViewModel EditInventory(IUserDataEEntityInventory inventory);
+    public IEntityInventory EditInventory(IEntityInventory inventory);
 
-    public IEntityInventoryGroupViewModel GetAllInventories();
+    public IEnumerable<IEntityInventory> GetAllInventories();
 
   }
 }

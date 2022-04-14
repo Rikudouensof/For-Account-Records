@@ -11,12 +11,12 @@ namespace ForAccountRecordsInfrastructure.Interfaces.Repository
 
   public interface IItemReposiory
   {
-    public IEntityItemViewModel GetSingleSpecificItem(int id);
+    public IEntityItems GetSingleSpecificItem(int id);
 
-    public IEntityItemViewModel AddNewItem(IUserDataEEntityItems item);
-    public IEntityItemViewModel EditItem(IUserDataEEntityItems item);
+    public IEntityItems AddNewItem(IEntityItems item);
+    public IEntityItems EditItem(IEntityItems item);
 
-    public IEntityItemGroupViewModel GetAllItems();
+    public IEnumerable<IEntityItems> GetAllItems();
 
 
   }

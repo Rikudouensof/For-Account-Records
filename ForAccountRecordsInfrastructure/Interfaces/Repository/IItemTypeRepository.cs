@@ -10,17 +10,17 @@ namespace ForAccountRecordsInfrastructure.Interfaces.Repository
 
   public interface IItemTypeRepository
   {
-    public IUserDataEEntityItemType GetSingleSpecificItemType(int id);
+    public IEntityItemType GetSingleSpecificItemType(int id);
 
 
-    public IEnumerable<IUserDataEEntityItemType> GetAllItemType();
+    public IEnumerable<IEntityItemType> GetAllItemType();
 
 
 
 
-    public IUserDataEEntityItemType AddSingleItemType(IUserDataEEntityItemType itemType);
+    public IEntityItemType AddSingleItemType(IEntityItemType itemType);
 
 
-    public IUserDataEEntityItemType EditItemType(IUserDataEEntityItemType itemType);
+    public IEntityItemType EditItemType(IEntityItemType itemType);
   }
 }

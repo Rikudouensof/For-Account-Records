@@ -9,17 +9,17 @@ namespace ForAccountRecordsInfrastructure.Interfaces.Repository
 {
   public interface ITransactionTypeRepository
   {
-    public IUserDataEntityTransactionType GetSingleSpecificTransactionType(int id);
+    public IEntityTransactionType GetSingleSpecificTransactionType(int id);
 
 
-    public IEnumerable<IUserDataEntityTransactionType> GetAllTransactionTypes();
+    public IEnumerable<IEntityTransactionType> GetAllTransactionTypes();
 
 
 
 
-    public IUserDataEntityTransactionType AddSingleTransactionType(IUserDataEntityTransactionType transactionType);
+    public IEntityTransactionType AddSingleTransactionType(IEntityTransactionType transactionType);
 
 
-    public IUserDataEntityTransactionType EditTransactionType(IUserDataEntityTransactionType transactionType);
+    public IEntityTransactionType EditTransactionType(IEntityTransactionType transactionType);
   }
 }

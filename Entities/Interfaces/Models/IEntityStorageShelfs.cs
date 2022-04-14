@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Entities.Interfaces.Models
 {
-  public interface IUserDataEEntityStorageShelfs : IEntityCoreEntity
+  public interface IEntityStorageShelfs : IEntityCoreEntity
   {
 
     int Id { get; set; }

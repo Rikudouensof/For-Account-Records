@@ -1,6 +1,7 @@
 ﻿using Entities.Interfaces.Models;
 using Entities.Interfaces.ViewModels;
 using ForAccountRecordsCore.Data;
+using ForAccountRecordsCore.Models;
 using ForAccountRecordsInfrastructure.Interfaces.Repository;
 using System;
 using System.Collections.Generic;
@@ -17,9 +18,11 @@ namespace ForAccountRecordsCore.Repository
     {
       _db = db;
     }
-    public IEntityInventoryViewModel AddNewInventory(IUserDataEEntityInventory inventory)
+    public IUserDataEEntityInventory AddNewInventory(IUserDataEEntityInventory inventory)
     {
-      throw new NotImplementedException();
+      _db.Contacts.Add(DataInventory)inventory);
+      _db.SaveChanges();
+      return inventory;
     }
 
     public IEntityInventoryViewModel EditInventory(IUserDataEEntityInventory inventory)
