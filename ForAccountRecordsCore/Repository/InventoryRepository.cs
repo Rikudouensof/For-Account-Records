@@ -18,26 +18,30 @@ namespace ForAccountRecordsCore.Repository
     {
       _db = db;
     }
-    public IUserDataEEntityInventory AddNewInventory(IUserDataEEntityInventory inventory)
+    public IEntityInventory AddNewInventory(IEntityInventory inventory)
     {
-      _db.Contacts.Add(DataInventory)inventory);
+      _db.Inventories.Add((DataInventory)inventory);
       _db.SaveChanges();
       return inventory;
     }
 
-    public IEntityInventoryViewModel EditInventory(IUserDataEEntityInventory inventory)
+    public IEntityInventory EditInventory(IEntityInventory inventory)
     {
-      throw new NotImplementedException();
+      _db.Inventories.Update((DataInventory)inventory);
+      _db.SaveChanges();
+      return inventory;
     }
 
-    public IEntityInventoryGroupViewModel GetAllInventories()
+    public IEnumerable<IEntityInventory> GetAllInventories()
     {
-      throw new NotImplementedException();
+      var inventories = _db.Inventories.OrderBy(m => m.ExpiryDate);
+      return inventories;
     }
 
-    public IEntityInventoryViewModel GetSingleSpecificInventory(int id)
+    public IEntityInventory GetSingleSpecificInventory(int id)
     {
-      throw new NotImplementedException();
+      var inventory = _db.Inventories.Find(id);
+      return inventory;
     }
   }
 }

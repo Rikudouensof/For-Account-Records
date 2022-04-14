@@ -10,10 +10,10 @@ namespace ForAccountRecordsInfrastructure.Interfaces.Repository
 {
   public interface ITransactionsfRepository
   {
-    public IEntityTransactions GetSingleTransaction(int Id);
+    public IEntityTransactions GetSingleTransaction(int id);
 
-    public IEntityTransactions AddSingleTransaction(IEntityTransactions storageShelfs);
-    public IEntityTransactions EditTransaction(IEntityTransactions storageShelfs);
+    public IEntityTransactions AddSingleTransaction(IEntityTransactions transaction);
+    public IEntityTransactions EditTransaction(IEntityTransactions transaction);
 
 
     public IEnumerable<IEntityTransactions> GetAllTransactions();

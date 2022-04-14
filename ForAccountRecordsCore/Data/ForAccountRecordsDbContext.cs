@@ -25,6 +25,7 @@ namespace ForAccountRecordsCore.Data
     public DbSet<DataItemType> ItemTypes { get; set; }
 
     public DbSet<DataStorageShelf> StorageShelf { get; set; }
+    public DbSet<DataStorageSpace> StorageSpaces { get; set; }
 
     public DbSet<DataTransaction> Transactions { get; set; }
 

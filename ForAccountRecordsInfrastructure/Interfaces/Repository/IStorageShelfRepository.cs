@@ -11,7 +11,7 @@ namespace ForAccountRecordsInfrastructure.Interfaces.Repository
 
   public interface IStorageShelfRepository
   {
-    public IEntityStorageShelfs GetSingleStorageShelf(int Id);
+    public IEntityStorageShelfs GetSingleStorageShelf(int id);
 
     public IEntityStorageShelfs AddSingleStorageShelf(IEntityStorageShelfs storageShelfs);
     public IEntityStorageShelfs EditStorageShelf(IEntityStorageShelfs storageShelfs);
